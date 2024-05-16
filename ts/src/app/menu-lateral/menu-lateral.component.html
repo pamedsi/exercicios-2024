@@ -1,0 +1,26 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <header><div class="nome-do-evento">SLACA 2019</div></header>
+  <img ngSrc="assets/dewey.png" class="logo-do-evento" alt="" height="258" width="220">
+  <section class="opcao-de-menu" *ngFor="let opcao of opcoesDoMenu" (click)="selecionarOpcao(opcao)">
+              <div *ngIf="opcaoClicada === opcao; else naoClicada" class="container-da-opcao-clicada">
+                <div class="retangulo-do-canto"></div>
+                <div class="texto-da-opcao-de-menu">{{ opcao }}</div>
+              </div>
+    <ng-template #naoClicada>
+                <div class="container-da-opcao-do-menu">
+                  <div class="texto-da-opcao-de-menu">{{ opcao }}</div>
+                </div>
+              </ng-template>
+  </section>
+  <section class="espaco-vazio" (click)="desselecionarOpcao()"></section>
+</body>
