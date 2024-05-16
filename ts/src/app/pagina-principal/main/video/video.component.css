@@ -13,6 +13,12 @@ body {
 .botoes {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+
+.detalhes-do-video {
+  display: flex;
+  flex-direction: column;
   width: 15.12rem;
 }
 
@@ -62,4 +68,42 @@ p {
   font-size: 0.875rem;
   color: #ED7839;
   text-align: right;
+}
+
+.cabecalho-dos-detalhes {
+  display: flex;
+  align-items: center;
+  width: 15.125rem;
+  height: 2.8125rem;
+  background-color: #FDF1EB;
+  border: 1px solid #ECECEC;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.texto-do-cabecalho {
+  color: #4E4E4E;
+  margin-left: 1rem;
+}
+
+.sobre-a-apresentacao {
+  font-family: Quicksand;
+  color: #5C5C5C;
+  font-size: 0.75rem;
+}
+
+.chave {
+  font-weight: 400;
+  color: #5C5C5C;
+}
+
+.valor {
+  color: #5C5C5C;
+  font-weight: 700;
+}
+
+.conteudo {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

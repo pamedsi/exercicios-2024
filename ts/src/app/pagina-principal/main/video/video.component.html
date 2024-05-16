@@ -7,6 +7,7 @@
     </video>
   </section>
   <section class="detalhes-do-video">
+    <br>
     <section class="botoes">
       <button class="download botao">
         <img ngSrc="assets/download.png" alt="" height="19" width="19">
@@ -16,5 +17,33 @@
       <button class="doi botao"><img ngSrc="assets/doi.png" height="19" width="19" alt=""></button>
     </section>
     <p>COMO CITAR ESSE TRABALHO?</p>
+    <section class="detalhes">
+      <header class="cabecalho-dos-detalhes"><div class="texto-do-cabecalho">Detalhes</div></header>
+      <br>
+      <section class="conteudo">
+        <section class="sobre-a-apresentacao">
+            <div *ngFor="let chave of chaves; index as i">
+              <span class="chave">{{chave}}: </span>
+              <span class="valor">{{valores[i]}}</span>
+            </div>
+        </section>
+        <br>
+        <section class="autores">
+          <div class="valor">Autores:</div>
+          <div class="chave">Galileo Galilei¹</div>
+          <div class="chave">Berta Lange de Morretes²</div>
+          <div class="chave">Isaac Newton³</div>
+          <div class="chave">Cesar Lattes¹</div>
+          <div class="chave">Stephen Hawking⁴</div>
+        </section>
+        <br><br>
+        <section class="universidades">
+          <div class="chave">¹Universidade Estadual de Campinas</div>
+          <div class="chave">²Universidade de São Paulo</div>
+          <div class="chave">³Instituto Nacional de Pesquisas Espaciais</div>
+          <div class="chave">⁴Universidade Federal do Rio de Janeiro</div>
+        </section>
+      </section>
+    </section>
   </section>
 </body>

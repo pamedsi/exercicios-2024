@@ -6,14 +6,12 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /*width: 71.625rem;*/
   min-height: 4.25rem;
   background-color: #FDF1EB;
 }
 
 .legendas {
   font-family: Roboto;
-  /*margin-left: 3rem;*/
   font-weight: 400;
   color: #725C5C;
 
