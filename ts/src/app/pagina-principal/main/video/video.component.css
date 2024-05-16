@@ -1,6 +1,65 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
 .titulo {
   font-family: Roboto;
   font-weight: 900;
   font-size: 1.25rem;
   color: #ED7839;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  width: 15.12rem;
+}
+
+.botao {
+  border: none;
+  border-radius: 4px;
+  background-color: #ED7839;
+  height: 1.9375rem;
+  margin-left: 0.5rem;
+}
+
+.download {
+  width: 7.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.texto-do-download {
+  color: white;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.download:hover {
+  cursor: pointer;
+}
+
+.favorito {
+  width: 2.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doi {
+  display: flex;
+  width: 2.6875rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #ED7839;
+  text-align: right;
 }
