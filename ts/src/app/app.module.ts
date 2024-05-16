@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import {NgOptimizedImage} from "@angular/common";
+import { HeaderComponent } from './pagina-principal/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuLateralComponent,
-    PaginaPrincipalComponent
+    PaginaPrincipalComponent,
+    HeaderComponent
   ],
     imports: [
         BrowserModule,
