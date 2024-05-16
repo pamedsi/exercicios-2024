@@ -4,14 +4,16 @@ body {
 
 header {
   display: flex;
-  width: 71.625rem;
-  height: 4.25rem;
+  justify-content: space-around;
+  align-items: center;
+  /*width: 71.625rem;*/
+  min-height: 4.25rem;
   background-color: #FDF1EB;
 }
 
 .legendas {
   font-family: Roboto;
-  margin-left: 3rem;
+  /*margin-left: 3rem;*/
   font-weight: 400;
   color: #725C5C;
 
@@ -46,3 +48,33 @@ option {
   background-color: transparent;
 }
 
+.area-logada {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: right;
+  font-family: Quicksand;
+}
+
+.foto-e-notificacoes {
+  display: flex;
+  justify-content: flex-end;
+  height: 1.875rem;
+  width: 2rem;
+  background-image: url("^./assets/image.png");
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+.selo-de-notificacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.625rem;
+  color: white;
+  background: #F85959;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+}
