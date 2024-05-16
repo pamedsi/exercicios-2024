@@ -27,3 +27,22 @@ header {
 .titulo {
   font-size: 1.375rem;
 }
+
+.configuracoes-de-idioma {
+  font-family: Quicksand;
+  height: 2.125rem;
+  border: 1px solid #CCCCCC;
+
+  display: flex;
+  align-items: center;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+}
+
+option {
+  background-color: transparent;
+}
+
