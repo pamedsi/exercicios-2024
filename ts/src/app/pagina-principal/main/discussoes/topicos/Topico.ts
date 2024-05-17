@@ -10,6 +10,7 @@ export class Topico {
   private readonly _respostas: Resposta[]
   private _mostrandoRespostas: boolean
   private readonly _emAnalise: boolean
+  private _editavel: boolean
 
   constructor(post: Post, assunto: string, autor: string, conteudo: string, emAnalise: boolean) {
     this._post = post
@@ -20,6 +21,15 @@ export class Topico {
     this._respostas = [];
     this._mostrandoRespostas = false
     this._emAnalise = emAnalise
+    this._editavel = false
+  }
+
+  tornarEditavel() {
+    this._editavel = true
+  }
+
+  get estaEditavel(): boolean {
+    return this._editavel;
   }
 
   get emAnalise(): boolean {

@@ -1,6 +1,20 @@
 <body class="topicos" *ngFor="let topico of topicos">
-  <section class="answered-topic">
-    <div class="ops-topic-subject" (click)="topico.mostrarRespostas()">{{topico.assunto}}</div>
+  <section *ngFor="let topicoEmAnalise of topicosEmAnalise; let i = index;" class="topicos-em-analise ">
+    <div class="topico topico-em-analise">
+      <div class="assunto">{{topicoEmAnalise.assunto}}</div>
+      <div class="autor">{{topicoEmAnalise.autor}}</div>
+      <div class="conteudo">{{topicoEmAnalise.conteudo}}</div>
+    </div>
+
+    <div class="modal-que-cobre" *ngIf="!topicoEmAnalise.estaEditavel" [style.height.px]="alturasDosTopicosEmAnalise[i]">
+      <img ngSrc="assets/icone-de-formulario-enviado.png" alt="" height="21" width="21">
+      <div class="texto-aguardando-feedback">Aguardando feedback dos autores</div>
+      <div class="botao-de-editar-topico">Editar tópico</div>
+    </div>
+  </section>
+
+  <section class="topico answered-topic">
+    <div class="assunto ops-topic-subject" (click)="topico.mostrarRespostas()">{{topico.assunto}}</div>
     <div class="autor">{{topico.autor}}</div>
     <div class="conteudo">{{topico.conteudo}}</div>
     <footer>

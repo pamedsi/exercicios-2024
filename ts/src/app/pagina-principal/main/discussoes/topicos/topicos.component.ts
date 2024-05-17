@@ -16,6 +16,7 @@ export class TopicosComponent implements OnInit {
   topicos: Topico[] = []
   subscription!: Subscription;
   topicosEmAnalise: Topico[] = []
+  alturasDosTopicosEmAnalise: string[] = [];
 
   constructor(private compartilhamentoDeTopicoService: CompartilhamentoDeTopicoService) {
     this.post = new Post("Adriano da Silva", ["Carmila Ferreira Andrade", "Ana Carolina"])
@@ -23,7 +24,10 @@ export class TopicosComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscription = this.compartilhamentoDeTopicoService.formularioAtual.subscribe(
-      msg => this.instanciarTopicoEmAnalise(msg)
+      msg => {
+        this.instanciarTopicoEmAnalise(msg)
+        this.obterAlturasDosTopicosEmAnalise()
+      }
     );
 
     const primeiroTopico = new Topico(this.post, "Assunto da pergunta aparece aqui", "Carlos Henrique Santos", "Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...", false)
@@ -48,6 +52,13 @@ export class TopicosComponent implements OnInit {
   instanciarTopicoEmAnalise(formularioPreenchido: FormularioDeTopico) {
     const novoTopico = new Topico(this.post, formularioPreenchido.assunto, "Usuário Atual", formularioPreenchido.conteudo, true)
     this.topicosEmAnalise.push(novoTopico)
+  }
+
+  obterAlturasDosTopicosEmAnalise(){
+    setTimeout(() => {
+      const topicoElements = document.querySelectorAll('.topico-em-analise');
+      this.alturasDosTopicosEmAnalise = Array.from(topicoElements).map((element: any, index: number, array: any[]): string => `${element.offsetHeight}`);
+    }, 0);
   }
 
   private readonly textoDaCarmila = `Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.

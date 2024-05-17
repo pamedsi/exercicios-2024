@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {CompartilhamentoDeTopicoService} from "../CompartilhamentoDeTopicoService";
 
 @Component({
@@ -9,6 +9,7 @@ import {CompartilhamentoDeTopicoService} from "../CompartilhamentoDeTopicoServic
 export class FormularioDeTopicoComponent implements OnInit {
   assunto = ''
   conteudo = ''
+  @Output() clickEmEnviar = new EventEmitter<void>();
 
   constructor(private compartilhamentoDeTopico: CompartilhamentoDeTopicoService) { }
 
@@ -16,9 +17,10 @@ export class FormularioDeTopicoComponent implements OnInit {
   }
 
   enviar(){
-    if (!this.assunto || !this.conteudo) return
+    // if (!this.assunto || !this.conteudo) return
     const formularioPreenchido: FormularioDeTopico = { assunto: this.assunto, conteudo: this.conteudo }
     this.compartilhamentoDeTopico.mudarDados(formularioPreenchido)
+    this.clickEmEnviar.emit()
   }
 }
 
