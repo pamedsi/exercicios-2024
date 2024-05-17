@@ -15,11 +15,11 @@
 
   <section class="comments-container" *ngIf="topico.mostrandoRespostas">
     <div *ngFor="let resposta of topico.respostas">
-      <div *ngIf="resposta.ehAutorDoPost(topico) else respostaDoNaoAutor" class="resposta-do-autor">
+      <div *ngIf="resposta.ehAutorDoPost(topico) || resposta.ehCoautorDoPost(topico) else respostaDoNaoAutor" class="resposta-do-autor">
         <div class="nome-do-autor-e-selo">
           <div class="autor-da-resposta">{{resposta.autor}}</div>
           <div class="container-do-selo">
-            <div class="texto-autor">Autor</div>
+            <div class="texto-autor">{{ resposta.ehAutorDoPost(topico) ? 'Autor' : 'Coautor'}}</div>
             <img ngSrc="assets/icone-autor.png" height="21" width="21" alt="">
           </div>
         </div>

@@ -26,4 +26,8 @@ export class Resposta {
   ehAutorDoPost(topico: Topico): boolean {
     return topico.post.autor === this._autor;
   }
+
+  ehCoautorDoPost(topico: Topico): boolean {
+    return topico.post.coautores.includes(this._autor)
+  }
 }
