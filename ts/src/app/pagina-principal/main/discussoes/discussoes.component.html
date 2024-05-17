@@ -1,8 +1,7 @@
 <body>
   <div class="container-do-titulo-discussoes"><span class="texto-discussoes">Discussões</span></div>
-  <ng-template #convite>
-      <app-convite-a-acao (clickEmCriarTopico)="tornarFormularioVisivel()"></app-convite-a-acao>
-  </ng-template>
-  <app-formulario-de-comentario *ngIf="formularioAVista; else convite"></app-formulario-de-comentario>
+  <app-convite-a-acao (clickEmCriarTopico)="mudarStatusDoFormulario(StatusDoNovoTopico.FORMULARIO_A_VISTA)" *ngIf="statusDoFormulario === StatusDoNovoTopico.CHAMADA_PARA_ACAO"></app-convite-a-acao>
+  <app-formulario-de-comentario (clickEmEnviar)="mudarStatusDoFormulario(StatusDoNovoTopico.FORMULARIO_ENVIADO)" *ngIf="statusDoFormulario === StatusDoNovoTopico.FORMULARIO_A_VISTA"></app-formulario-de-comentario>
+  <app-formulario-enviado (clickEmCriarNovoTopico)="mudarStatusDoFormulario(StatusDoNovoTopico.CHAMADA_PARA_ACAO)" *ngIf="statusDoFormulario === StatusDoNovoTopico.FORMULARIO_ENVIADO"></app-formulario-enviado>
   <app-topicos></app-topicos>
 </body>

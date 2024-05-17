@@ -6,15 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./discussoes.component.css']
 })
 export class DiscussoesComponent implements OnInit {
-  formularioAVista = false
+  statusDoFormulario = StatusDoNovoTopico.CHAMADA_PARA_ACAO
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+
   }
 
-  tornarFormularioVisivel() {
-    this.formularioAVista = true;
+  mudarStatusDoFormulario(status: StatusDoNovoTopico): void {
+    this.statusDoFormulario = status;
   }
 
+  protected readonly StatusDoNovoTopico = StatusDoNovoTopico;
+}
+enum StatusDoNovoTopico {
+  CHAMADA_PARA_ACAO,
+  FORMULARIO_A_VISTA,
+  FORMULARIO_ENVIADO
 }

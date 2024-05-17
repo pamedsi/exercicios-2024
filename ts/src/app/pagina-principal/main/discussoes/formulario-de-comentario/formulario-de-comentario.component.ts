@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-formulario-de-comentario',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulario-de-comentario.component.css']
 })
 export class FormularioDeComentarioComponent implements OnInit {
+  @Output() clickEmEnviar: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  enviar(){
+    this.clickEmEnviar.emit();
   }
 
 }

@@ -13,6 +13,7 @@ import { DiscussoesComponent } from './pagina-principal/main/discussoes/discusso
 import { TopicosComponent } from './pagina-principal/main/discussoes/topicos/topicos.component';
 import { FormularioDeComentarioComponent } from './pagina-principal/main/discussoes/formulario-de-comentario/formulario-de-comentario.component';
 import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convite-a-acao/convite-a-acao.component';
+import { FormularioEnviadoComponent } from './pagina-principal/main/discussoes/formulario-enviado/formulario-enviado.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convit
     DiscussoesComponent,
     TopicosComponent,
     FormularioDeComentarioComponent,
-    ConviteAAcaoComponent
+    ConviteAAcaoComponent,
+    FormularioEnviadoComponent
   ],
     imports: [
         BrowserModule,
