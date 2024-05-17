@@ -32,6 +32,7 @@ body {
   flex-direction: column;
   border: 1px solid #ECECEC;
   height: 430px;
+  width: 15.125rem;
 }
 
 .botao {
