@@ -4,10 +4,12 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 4.25rem;
   background-color: #FDF1EB;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .legendas {
@@ -76,3 +78,4 @@ option {
   width: 0.75rem;
   height: 0.75rem;
 }
+
