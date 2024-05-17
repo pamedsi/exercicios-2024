@@ -104,7 +104,6 @@ p {
   font-family: Quicksand;
   color: #5C5C5C;
   font-size: 0.75rem;
-  margin-top: 1rem;
 }
 
 .chave {
@@ -114,9 +113,25 @@ p {
 
 .conteudo {
   font-family: Quicksand;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   overflow-y: auto;
+}
+
+.conteudo::-webkit-scrollbar {
+  width: 4px; /* Esse mudou a largura da barra */
+}
+
+.conteudo::-webkit-scrollbar-thumb {
+  background: #BFBFBF; /* Esse aqui tirou a setinha */
+}
+
+.conteudo::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.conteudo::-webkit-scrollbar-track {
+  margin-top: 0.5rem;
+  margin-bottom: 10rem; /* Único jeito que consegui diminuir a altura da barra de rolagem */
 }
 
 .valor {
