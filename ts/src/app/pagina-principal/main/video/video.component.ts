@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-video',
   templateUrl: './video.component.html',
-  styleUrls: ['./video.component.css']
+  styleUrls: ['./video.component.css'],
 })
 export class VideoComponent implements OnInit {
   chaves = ['Tipo de Apresentação', 'Eixo temático', 'Palavras-chaves']
