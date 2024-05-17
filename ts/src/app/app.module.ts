@@ -11,6 +11,8 @@ import {VideoComponent} from "./pagina-principal/main/video/video.component";
 import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component';
 import { DiscussoesComponent } from './pagina-principal/main/discussoes/discussoes.component';
 import { PerguntasComponent } from './pagina-principal/main/discussoes/perguntas/perguntas.component';
+import { FormularioDeComentarioComponent } from './pagina-principal/main/discussoes/formulario-de-comentario/formulario-de-comentario.component';
+import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convite-a-acao/convite-a-acao.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PerguntasComponent } from './pagina-principal/main/discussoes/perguntas
     HeaderComponent,
     ResumoComponent,
     DiscussoesComponent,
-    PerguntasComponent
+    PerguntasComponent,
+    FormularioDeComentarioComponent,
+    ConviteAAcaoComponent
   ],
     imports: [
         BrowserModule,
