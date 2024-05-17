@@ -15,6 +15,7 @@ import { FormularioDeTopicoComponent } from './pagina-principal/main/discussoes/
 import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convite-a-acao/convite-a-acao.component';
 import { FormularioEnviadoComponent } from './pagina-principal/main/discussoes/formulario-enviado/formulario-enviado.component';
 import {FormsModule} from "@angular/forms";
+import { FooterComponent } from './pagina-principal/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {FormsModule} from "@angular/forms";
     TopicosComponent,
     FormularioDeTopicoComponent,
     ConviteAAcaoComponent,
-    FormularioEnviadoComponent
+    FormularioEnviadoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
