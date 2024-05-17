@@ -8,6 +8,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { HeaderComponent } from './pagina-principal/header/header.component';
 import {MainComponent} from "./pagina-principal/main/main.component";
 import {VideoComponent} from "./pagina-principal/main/video/video.component";
+import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {VideoComponent} from "./pagina-principal/main/video/video.component";
     PaginaPrincipalComponent,
     MainComponent,
     VideoComponent,
-    HeaderComponent
+    HeaderComponent,
+    ResumoComponent
   ],
     imports: [
         BrowserModule,
