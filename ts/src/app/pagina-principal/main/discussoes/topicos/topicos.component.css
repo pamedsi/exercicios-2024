@@ -2,17 +2,18 @@ body {
   font-family: Quicksand;
   }
 
-.container-do-topico {
+.answered-topic {
   box-shadow: 0 0 8px 0 #0000001F;
   padding: 1rem;
   margin-top: 1rem
 }
 
-.assunto {
+.ops-topic-subject {
   color: #ED7839;
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.25rem;
+  cursor: pointer;
 }
 
 .autor {

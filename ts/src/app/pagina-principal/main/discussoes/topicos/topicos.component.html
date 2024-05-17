@@ -1,6 +1,6 @@
 <body class="topicos" *ngFor="let topico of topicos">
-  <section class="container-do-topico" >
-    <div class="assunto">{{topico.assunto}}</div>
+  <section class="answered-topic">
+    <div class="ops-topic-subject" (click)="topico.mostrarRespostas()">{{topico.assunto}}</div>
     <div class="autor">{{topico.autor}}</div>
     <div class="conteudo">{{topico.conteudo}}</div>
     <footer>

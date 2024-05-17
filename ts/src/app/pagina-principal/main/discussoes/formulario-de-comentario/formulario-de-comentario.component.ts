@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-formulario-de-comentario',
+  selector: 'app-formulario-de-topico',
   templateUrl: './formulario-de-comentario.component.html',
   styleUrls: ['./formulario-de-comentario.component.css']
 })

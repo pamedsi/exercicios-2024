@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-formulario-enviado',
+  selector: 'app-topico-enviado',
   templateUrl: './formulario-enviado.component.html',
   styleUrls: ['./formulario-enviado.component.css']
 })
