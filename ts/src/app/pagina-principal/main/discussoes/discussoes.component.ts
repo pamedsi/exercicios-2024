@@ -13,4 +13,8 @@ export class DiscussoesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  tornarFormularioVisivel() {
+    this.formularioAVista = true;
+  }
+
 }

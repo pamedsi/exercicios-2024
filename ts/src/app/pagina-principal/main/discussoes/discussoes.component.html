@@ -1,26 +1,7 @@
 <body>
   <div class="container-do-titulo-discussoes"><span class="texto-discussoes">Discussões</span></div>
-  <section>
-    <div class="chamada-para-acao">Compartilhe suas ideias ou dúvidas com os autores!</div>
-    <section class="imagens">
-      <div class="container-das-imagens">
-        <img ngSrc="assets/icone1.png" height="49" width="51" alt="">
-        <img ngSrc="assets/icone2.png" height="49" width="51" alt="">
-        <img ngSrc="assets/icone3.png" height="49" width="51" alt="">
-      </div>
-    </section>
-    <section class="container-do-texto-motivador">
-      <p class="texto-motivador">
-        Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
-      </p>
-    </section>
-    <section class="container-do-botao">
-      <div class="linha"></div>
-      <div class="btn-create-topic">
-        <img ngSrc="assets/icon%20-%20criar.png" height="17" width="17" alt="">
-        <span class="texto-criar-topico">criar tópico</span>
-      </div>
-      <div class="linha"></div>
-    </section>
-  </section>
+    <ng-template #convite>
+      <app-convite-a-acao (clickEmCriarTopico)="tornarFormularioVisivel()"></app-convite-a-acao>
+    </ng-template>
+  <app-formulario-de-comentario *ngIf="formularioAVista; else convite"></app-formulario-de-comentario>
 </body>
