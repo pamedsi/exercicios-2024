@@ -9,8 +9,9 @@ export class Topico {
   private _curtidas: number
   private readonly _respostas: Resposta[]
   private _mostrandoRespostas: boolean
+  private readonly _emAnalise: boolean
 
-  constructor(post: Post, assunto: string, autor: string, conteudo: string) {
+  constructor(post: Post, assunto: string, autor: string, conteudo: string, emAnalise: boolean) {
     this._post = post
     this._assunto = assunto;
     this._autor = autor;
@@ -18,6 +19,11 @@ export class Topico {
     this._curtidas = 0;
     this._respostas = [];
     this._mostrandoRespostas = false
+    this._emAnalise = emAnalise
+  }
+
+  get emAnalise(): boolean {
+    return this._emAnalise;
   }
 
   get post(): Post {

@@ -2,11 +2,11 @@
   <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
   <div class="label-e-input">
     <form class="subject">Assunto</form>
-    <input class="subject" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
+    <input [(ngModel)]="assunto" class="subject" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
   </div>
   <div class="label-e-input">
     <form>Conteúdo</form>
-    <textarea id="comentario"></textarea>
+    <textarea [(ngModel)]="conteudo" id="comentario"></textarea>
   </div>
   <section class="container-do-botao-enviar">
     <button (click)="enviar()">Enviar</button>

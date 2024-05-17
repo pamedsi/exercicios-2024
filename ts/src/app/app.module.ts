@@ -11,9 +11,10 @@ import {VideoComponent} from "./pagina-principal/main/video/video.component";
 import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component';
 import { DiscussoesComponent } from './pagina-principal/main/discussoes/discussoes.component';
 import { TopicosComponent } from './pagina-principal/main/discussoes/topicos/topicos.component';
-import { FormularioDeComentarioComponent } from './pagina-principal/main/discussoes/formulario-de-comentario/formulario-de-comentario.component';
+import { FormularioDeTopicoComponent } from './pagina-principal/main/discussoes/formulario-de-topico/formulario-de-topico.component';
 import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convite-a-acao/convite-a-acao.component';
 import { FormularioEnviadoComponent } from './pagina-principal/main/discussoes/formulario-enviado/formulario-enviado.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,14 +27,15 @@ import { FormularioEnviadoComponent } from './pagina-principal/main/discussoes/f
     ResumoComponent,
     DiscussoesComponent,
     TopicosComponent,
-    FormularioDeComentarioComponent,
+    FormularioDeTopicoComponent,
     ConviteAAcaoComponent,
     FormularioEnviadoComponent
   ],
-    imports: [
-        BrowserModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    BrowserModule,
+    NgOptimizedImage,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
