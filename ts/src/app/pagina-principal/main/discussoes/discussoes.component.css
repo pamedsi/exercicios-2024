@@ -3,6 +3,7 @@ body {
   color: #5C5C5C;
   font-weight: 500;
   margin-top: 2rem;
+  border: 1px solid #ECECEC
 }
 
 p {

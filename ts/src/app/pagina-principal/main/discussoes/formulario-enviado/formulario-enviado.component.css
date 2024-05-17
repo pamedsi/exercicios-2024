@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 13rem;
+}
+
 .topico-enviado {
   margin-top: 1.125rem;
   font-weight: 700;
@@ -46,4 +53,5 @@
   color: #F48F44;
   font-size: 0.875rem;
   text-decoration: underline;
+  cursor: pointer;
 }
