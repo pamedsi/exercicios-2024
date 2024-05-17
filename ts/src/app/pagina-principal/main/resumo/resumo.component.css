@@ -2,10 +2,13 @@ body {
   font-family: Quicksand;
   color: #5C5C5C;
   font-weight: 400;
+  margin-top: 2rem;
 }
 
 p {
   font-size: 0.875rem;
+  padding: 1rem;
+  border: 1px solid #ECECEC
 }
 
 .container-do-titulo-do-resumo {
