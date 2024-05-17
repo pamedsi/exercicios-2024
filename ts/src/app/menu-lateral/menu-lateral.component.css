@@ -36,17 +36,18 @@ header {
 }
 
 .container-da-opcao-do-menu:hover {
-  text-decoration: underline;
+  padding-left: 0.3125rem;
   cursor: pointer;
   height: 2.0625rem;
   flex-grow: 1;
   display: flex;
   align-items: center;
   border-bottom: 2px solid #E7E7E7;
+  background-color: #FDF1EB;
+  transition: padding-left 100ms;
 }
 
 .container-da-opcao-clicada {
-  text-decoration: underline;
   cursor: pointer;
   background-color: #FDF1EB;
   height: 2.0625rem;
