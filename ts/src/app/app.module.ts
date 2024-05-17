@@ -9,6 +9,7 @@ import { HeaderComponent } from './pagina-principal/header/header.component';
 import {MainComponent} from "./pagina-principal/main/main.component";
 import {VideoComponent} from "./pagina-principal/main/video/video.component";
 import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component';
+import { DiscussoesComponent } from './pagina-principal/main/discussoes/discussoes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component
     MainComponent,
     VideoComponent,
     HeaderComponent,
-    ResumoComponent
+    ResumoComponent,
+    DiscussoesComponent
   ],
     imports: [
         BrowserModule,

@@ -1,31 +1,25 @@
 body {
-  font-family: Quicksand;
+  font-family: Roboto;
   color: #5C5C5C;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p {
   font-size: 0.875rem;
 }
 
-.container-do-titulo-do-resumo {
+.container-do-titulo-discussoes {
   display: flex;
   align-items: center;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   border: 1px solid #ECECEC;
   background-color: #fcf0ea;
+  width: inherit;
   height: 2.8125rem;
 }
 
-.texto-resumo {
+.texto-discussoes {
+  font-size: 1.25rem;
   margin-left: 1rem;
 }
-
-.btn-show-more {
-  font-weight: 700;
-  font-size: 0.875rem;
-  color: #ec7839;
-  cursor: pointer;
-}
-
