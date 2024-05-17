@@ -4,7 +4,7 @@ body {
 }
 
 .titulo-e-video {
-  margin-right: 2rem;
+    margin-right: 2rem;
 }
 
 .titulo {
@@ -14,7 +14,7 @@ body {
   color: #ED7839;
 }
 
-.botoes {
+.container-dos-botoes {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -110,4 +110,21 @@ p {
 .conteudo {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.botoes-e-como-citar {
+  height: 5.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-do-titulo {
+  display: flex;
+  height: 5.375rem;
+  align-items: center;
+}
+
+.como-citar {
+  margin-top: 0.8rem;
 }
