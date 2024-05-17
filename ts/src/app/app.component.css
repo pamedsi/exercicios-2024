@@ -3,12 +3,14 @@
   flex-direction: row;
 }
 
-.full-width {
+.pagina-principal {
   width: 100%;
   max-width: 100%;
+  margin-left: 13.75rem;;
 }
 
-.full-height {
+.menu-lateral {
+  position:fixed;
   height: 100%;
   max-height: 100%;
 }
