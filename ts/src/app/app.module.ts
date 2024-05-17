@@ -10,6 +10,7 @@ import {MainComponent} from "./pagina-principal/main/main.component";
 import {VideoComponent} from "./pagina-principal/main/video/video.component";
 import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component';
 import { DiscussoesComponent } from './pagina-principal/main/discussoes/discussoes.component';
+import { PerguntasComponent } from './pagina-principal/main/discussoes/perguntas/perguntas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DiscussoesComponent } from './pagina-principal/main/discussoes/discusso
     VideoComponent,
     HeaderComponent,
     ResumoComponent,
-    DiscussoesComponent
+    DiscussoesComponent,
+    PerguntasComponent
   ],
     imports: [
         BrowserModule,
