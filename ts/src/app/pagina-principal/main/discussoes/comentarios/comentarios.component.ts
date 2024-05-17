@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {Comentario} from "./Comentario";
 
 @Component({
-  selector: 'app-perguntas',
-  templateUrl: './perguntas.component.html',
-  styleUrls: ['./perguntas.component.css']
+  selector: 'app-comentarios',
+  templateUrl: './comentarios.component.html',
+  styleUrls: ['./comentarios.component.css']
 })
-export class PerguntasComponent implements OnInit {
+export class ComentariosComponent implements OnInit {
   comentarios: Comentario[] = []
 
   constructor() { }

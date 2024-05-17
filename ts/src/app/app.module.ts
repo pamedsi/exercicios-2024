@@ -10,7 +10,7 @@ import {MainComponent} from "./pagina-principal/main/main.component";
 import {VideoComponent} from "./pagina-principal/main/video/video.component";
 import { ResumoComponent } from './pagina-principal/main/resumo/resumo.component';
 import { DiscussoesComponent } from './pagina-principal/main/discussoes/discussoes.component';
-import { PerguntasComponent } from './pagina-principal/main/discussoes/perguntas/perguntas.component';
+import { ComentariosComponent } from './pagina-principal/main/discussoes/comentarios/comentarios.component';
 import { FormularioDeComentarioComponent } from './pagina-principal/main/discussoes/formulario-de-comentario/formulario-de-comentario.component';
 import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convite-a-acao/convite-a-acao.component';
 
@@ -24,7 +24,7 @@ import { ConviteAAcaoComponent } from './pagina-principal/main/discussoes/convit
     HeaderComponent,
     ResumoComponent,
     DiscussoesComponent,
-    PerguntasComponent,
+    ComentariosComponent,
     FormularioDeComentarioComponent,
     ConviteAAcaoComponent
   ],
