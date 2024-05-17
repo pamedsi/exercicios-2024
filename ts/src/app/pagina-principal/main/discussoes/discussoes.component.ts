@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./discussoes.component.css']
 })
 export class DiscussoesComponent implements OnInit {
+  formularioAVista = false
 
   constructor() { }
 

@@ -3,6 +3,10 @@ body {
   flex-direction: row;
 }
 
+.titulo-e-video {
+  margin-right: 2rem;
+}
+
 .titulo {
   font-family: Roboto;
   font-weight: 900;
