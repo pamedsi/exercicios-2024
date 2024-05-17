@@ -1,0 +1,36 @@
+<body class="topicos" *ngFor="let topico of topicos">
+  <section class="container-do-topico" >
+    <div class="assunto">{{topico.assunto}}</div>
+    <div class="autor">{{topico.autor}}</div>
+    <div class="conteudo">{{topico.conteudo}}</div>
+    <footer>
+      <img class="item-do-footer" ngSrc="assets/mais%20informações.png" alt="" height="18" width="4">
+      <img class="item-do-footer" ngSrc="assets/curtir.png" alt="" height="25" width="31">
+      <div class="item-do-footer">{{topico.curtidas}} {{topico.curtidas === 1 ? 'like' : 'likes'}}</div>
+      <div (click)="topico.mostrarRespostas()" class="item-do-footer">
+          {{topico.respostas.length}} {{topico.respostas.length === 1 ? 'resposta' : 'respostas'}}
+      </div>
+    </footer>
+  </section>
+
+  <section class="comments-container" *ngIf="topico.mostrandoRespostas">
+    <div *ngFor="let resposta of topico.respostas">
+      <div *ngIf="resposta.ehAutorDoPost(topico) else respostaDoNaoAutor" class="resposta-do-autor">
+        <div class="nome-do-autor-e-selo">
+          <div class="autor-da-resposta">{{resposta.autor}}</div>
+          <div class="container-do-selo">
+            <div class="texto-autor">Autor</div>
+            <img ngSrc="assets/icone-autor.png" height="21" width="21" alt="">
+          </div>
+        </div>
+        <div class="conteudo-da-resposta">{{resposta.conteudo}}</div>
+      </div>
+      <ng-template #respostaDoNaoAutor>
+        <div class="resposta-do-nao-autor">
+          <div class="autor-da-resposta">{{resposta.autor}}</div>
+          <div class="conteudo-da-resposta">{{resposta.conteudo}}</div>
+        </div>
+      </ng-template>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,83 @@
+body {
+  font-family: Quicksand;
+  }
+
+.container-do-topico {
+  box-shadow: 0 0 8px 0 #0000001F;
+  padding: 1rem;
+  margin-top: 1rem
+}
+
+.assunto {
+  color: #ED7839;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.autor {
+  color: #5C5C5C;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.conteudo {
+  color: #4D4D4D;
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.item-do-footer {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.resposta-do-autor {
+  background-color: #F8F8F8;
+  padding: 1rem;
+  border: 1px solid #E7E7E7
+}
+
+.resposta-do-nao-autor {
+  padding: 1rem;
+  border: 1px solid #E7E7E7
+}
+
+.autor-da-resposta {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #5C5C5C
+}
+
+.conteudo-da-resposta {
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.nome-do-autor-e-selo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-do-selo {
+  width: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-autor {
+  color:#ED7839;
+  font-size: 0.875rem;
+}
