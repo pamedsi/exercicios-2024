@@ -50,14 +50,14 @@ export class TopicosComponent implements OnInit {
   }
 
   instanciarTopicoEmAnalise(formularioPreenchido: FormularioDeTopico) {
-    const novoTopico = new Topico(this.post, formularioPreenchido.assunto, "Usuário Atual", formularioPreenchido.conteudo, true)
+    const novoTopico = new Topico(this.post, formularioPreenchido.assunto, "Nome do Usuário", formularioPreenchido.conteudo, true)
     this.topicosEmAnalise.push(novoTopico)
   }
 
   obterAlturasDosTopicosEmAnalise(){
     setTimeout(() => {
-      const topicoElements = document.querySelectorAll('.topico-em-analise');
-      this.alturasDosTopicosEmAnalise = Array.from(topicoElements).map((element: any, index: number, array: any[]): string => `${element.offsetHeight}`);
+      const topicoElements = document.querySelectorAll('.topico-em-analise-nao-editavel');
+      this.alturasDosTopicosEmAnalise = Array.from(topicoElements).map((element: any): string => `${element.offsetHeight}`);
     }, 0);
   }
 

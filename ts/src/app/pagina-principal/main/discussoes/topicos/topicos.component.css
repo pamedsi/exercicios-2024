@@ -26,8 +26,8 @@ body {
   color: #4D4D4D;
   font-weight: 400;
   font-size: 0.875rem;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
   word-wrap: break-word;
 }
 
@@ -91,13 +91,13 @@ footer {
   position: relative;
 }
 
-.topico-em-analise {
+.topico-em-analise-nao-editavel {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   filter: blur(2px);
   -webkit-filter: blur(2px);
-   margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .modal-que-cobre {
@@ -105,7 +105,6 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  /*height: inherit;*/
   background-color: rgba(231, 231, 231, 0.5);
   display: flex;
   flex-direction: column;
@@ -128,4 +127,43 @@ footer {
   font-family: Quicksand;
   font-weight: 700;
   font-size: 1rem;
+}
+
+.container-do-botao {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.linha {
+  background-color: #E7E7E7;
+  height: 1px;
+  flex-grow: 1;
+}
+
+.botao-de-finalizar-edicao {
+  width: 8.3125rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+}
+.texto-finalizar-edicao {
+  color: white;
+}
+
+textarea {
+  min-height: 5rem;
+  height: 100%;
+  width: 100%;
+}
+
+label {
+  margin-right: 1rem;
+  font-family: Roboto;
+  color: #ED7839;
+  margin-top: 0.7rem;
 }

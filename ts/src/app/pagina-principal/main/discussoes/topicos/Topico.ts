@@ -3,9 +3,9 @@ import {Post} from "./Post";
 
 export class Topico {
   private readonly _post: Post;
-  private readonly _assunto: string
+  private _assunto: string
   private readonly _autor: string
-  private readonly _conteudo: string
+  private _conteudo: string
   private _curtidas: number
   private readonly _respostas: Resposta[]
   private _mostrandoRespostas: boolean
@@ -26,6 +26,9 @@ export class Topico {
 
   tornarEditavel() {
     this._editavel = true
+  }
+  finalizarEdicao() {
+    this._editavel = false
   }
 
   get estaEditavel(): boolean {
@@ -74,5 +77,12 @@ export class Topico {
 
   get respostas(): Resposta[] {
     return this._respostas.sort((a, b) => a.momentoDaResposta.getTime() - b.momentoDaResposta.getTime());
+  }
+  set assunto(value: string) {
+    this._assunto = value;
+  }
+
+  set conteudo(value: string) {
+    this._conteudo = value;
   }
 }

@@ -1,15 +1,27 @@
 <body class="topicos" *ngFor="let topico of topicos">
   <section *ngFor="let topicoEmAnalise of topicosEmAnalise; let i = index;" class="topicos-em-analise ">
-    <div class="topico topico-em-analise">
+    <div class="topico topico-em-analise-nao-editavel" *ngIf="!topicoEmAnalise.estaEditavel">
       <div class="assunto">{{topicoEmAnalise.assunto}}</div>
       <div class="autor">{{topicoEmAnalise.autor}}</div>
       <div class="conteudo">{{topicoEmAnalise.conteudo}}</div>
     </div>
-
+    <div class="topico topico-em-analise-editavel" *ngIf="topicoEmAnalise.estaEditavel">
+      <label>Assunto:</label>
+      <input class="assunto" [(ngModel)]="topicoEmAnalise.assunto">
+      <br><label>Conteúdo:</label>
+      <textarea class="conteudo" [(ngModel)]="topicoEmAnalise.conteudo" ></textarea>
+      <section class="container-do-botao">
+        <div class="linha"></div>
+        <div class="botao-de-finalizar-edicao" (click)="topicoEmAnalise.finalizarEdicao(); obterAlturasDosTopicosEmAnalise()">
+          <span class="texto-finalizar-edicao">Finalizar edição</span>
+        </div>
+        <div class="linha"></div>
+      </section>
+    </div>
     <div class="modal-que-cobre" *ngIf="!topicoEmAnalise.estaEditavel" [style.height.px]="alturasDosTopicosEmAnalise[i]">
       <img ngSrc="assets/icone-de-formulario-enviado.png" alt="" height="21" width="21">
       <div class="texto-aguardando-feedback">Aguardando feedback dos autores</div>
-      <div class="botao-de-editar-topico">Editar tópico</div>
+      <div class="botao-de-editar-topico" (click)="topicoEmAnalise.tornarEditavel()">Editar tópico</div>
     </div>
   </section>
 
