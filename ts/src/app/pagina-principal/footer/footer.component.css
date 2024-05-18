@@ -43,6 +43,7 @@ body {
   height: 2rem;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .saiba-mais {
